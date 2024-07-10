@@ -1,0 +1,9 @@
+.container{
+    width: 40%;
+    background-color:aliceblue;
+}
+body{
+    background-image: url("C:/FinalProject/Project/src/assets/images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

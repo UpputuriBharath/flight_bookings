@@ -1,0 +1,16 @@
+<body>
+    <div class="container1">   
+        <div class="flip-form-back">
+            <form  class="form2" (ngSubmit)="onRegister()">  
+                <h2> Sign Up </h2>
+                <b>User ID </b><br/> <input type="number" id="uid" [(ngModel)]="registerdata.uid" name="uid" required><br/> <br/>
+                <b>User Name </b> <br/> <input type="text" id="username" [(ngModel)]="registerdata.username" name="username"required/> <br/> <br/>
+                <b>Password </b> <br/> <input type="password" id="password" [(ngModel)]="registerdata.password" name="password" required/> <br/> <br/>
+                <b>Email ID </b> <br/> <input type="email" id="emailid" [(ngModel)]="registerdata.email" name="emailid" required/><br/><br/>
+                <button class="btn btn-primary"> Register </button>
+                <p> Already have then!...<span class="pointer" routerLink="/login"> Login </span> </p>
+            </form>
+        </div>                            
+    </div>
+</body>
+

@@ -1,0 +1,20 @@
+<!--    Login Form       -->
+<body class="image"> 
+        <div class="flip-form" id="FlipForm">
+            <div class="flip-form-inner">     
+                <div class="container">
+                    <div class="flip-form-front" >  
+                        
+                        <form  #login="ngForm" (ngSubmit)="onLogin()">  
+                            <h2> Sign In </h2>
+                            <b> User Name </b> <br/> <input type="text" id="username" [(ngModel)]="logindata.username" name="username" required/> <br/> <br/>
+                            <b> Password </b> <br/> <input type="password" id="password" [(ngModel)]="logindata.password" name="password" required/> <br/> <br/>
+                            <button class="btn btn-primary"> Login </button>
+                            <p> If new user?...<span class="pointer" routerLink="/register">Register</span> </p>
+                        </form>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>

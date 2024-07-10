@@ -1,0 +1,20 @@
+.bgn {
+    background-color: rgb(71, 159, 236);
+}
+.block{
+    display:flex;
+justify-content: flex-start;
+}
+/* .logo{
+    height:165px;
+    width:280px;
+    background: url("../../assets/images/dream.jpg")
+} */
+
+.logout:hover{
+    text-decoration: underline;
+    color:red;
+}
+.context{
+    background-image: url("C:/FinalProject/Project/src/assets/images/head.jpg");
+}

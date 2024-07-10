@@ -1,0 +1,86 @@
+
+<div class="background mt-5">
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+            <div class="col-4 mt-5"></div>
+            <div class="col-4 bg-light mt-5">
+                <form  class="mt-5">
+                    <label  class="form-label"for="source" >Source </label>
+                    <input  class="form-control" type="text" id="source" [(ngModel)]="flightdata.source" name="source"/><br/>
+                    <label  class="form-label" for="destination" >Destination </label>
+                    <input class="form-control" type="text" id="destination" [(ngModel)]="flightdata.destination" name="destination"/><br/>
+                    <label class="form-label" for="tdate">Travel date </label>
+                    <input  class="form-control" type="date" id="tdate" [(ngModel)]="flightdata.tdate" name="tdate"/><br/>
+                    <label class="form-label" for="type">Type </label>
+                        <select class="form-select" [(ngModel)]="flightdata.type" id="type" name="options">
+                        <option value="Business Class" > Business Class </option>
+                        <option value="Economy Class"> Economy class </option>
+                        <option value="Elite Class"> Elite class </option>
+                    </select>
+                    <button class="btn btn-warning container-fluid my-4" (click)="Onsearch()" >Search flights</button>
+
+
+                                    </form> 
+                                                </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+<div class="container-fluid d-flex align-items-center justify-content-center ">
+    <div class="row " *ngIf="result.length >0">
+        
+            <h2> Available Flights </h2>
+            <table class="table table-hover table-bordered " >
+                
+                <thead>
+                    <th> Flight Number </th>
+                    <th> Flight Name </th>
+                    <!-- <th> Source </th>
+                    <th> Destination </th> -->
+                    <th> Travel Date </th>
+                    <th> Booking Date </th>
+                    <th> Departure Time </th>
+                    <th> Type of Seat </th>
+                    <th> Cost </th>
+                </thead>
+                
+                <tbody >
+                   
+                <tr *ngFor="let booking of result" >
+                        <td> {{booking.flightno}} </td>
+                        <td> {{booking.flightname}} </td>
+                        <!-- <td> {{booking.source}} </td>
+                        <td> {{booking.destination}} </td> -->
+                        <td> {{booking.tdate}} </td>
+                        <td> {{booking.bdate}} </td>
+                        <td> {{booking.time}} </td>
+                        <td> {{booking.type}} </td> 
+                        <td> {{booking.cost}}</td>
+                        <button  class="btn btn-success" (click)="book(booking)">Book Ticket </button>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<h2> Booking Details </h2>
+
+<form>
+    <label for="fname">First Name </label>
+    <input type="text" id="fname" [(ngModel)]="bookinginfo" name="fname"><br/>
+    <label for="lname">Last Name </label>
+    <input type="text" id="lname" [(ngModel)]="bookinginfo" name="lname"><br>
+    <label for="age"> Age </label>
+    <input type="number" id="age" [(ngModel)]="bookinginfo" name="age"><br>
+    <label for="gender"> Gender </label>
+    <input type="radio" id="male" [(ngModel)]="bookinginfo" name="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" [(ngModel)]="bookinginfo" name="female">
+    <label for="female">Female</label>
+    <input type="radio" id="others" [(ngModel)]="bookinginfo" name="others">
+    <label for="others">Others</label><br>
+    <button type="submit"> Book </button>
+</form>
+ -->

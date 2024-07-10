@@ -1,0 +1,21 @@
+.delete{
+    background-color: red;
+    border-radius: 25%;
+    margin: 5px;
+}
+.slide-in-right{
+    animation: slide-in-right 1s forwards;
+}
+@keyframes slide-in-right{
+from {
+    transform: translateX(100%);
+    opacity: 0;
+}
+to{
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+.body{
+    background-image: url("C:/FinalProject/Project/src/assets/images/sunset3.jpg");
+}

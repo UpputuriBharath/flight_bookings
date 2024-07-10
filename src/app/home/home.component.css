@@ -1,0 +1,61 @@
+.homedata{
+    position: absolute;
+    
+}
+
+.logo{
+    background: url("../../assets/images/flightlogo.jpg");
+}
+.heading{
+background: linear-gradient(to left,rgb(212, 16, 16),rgb(15, 15, 216),rgb(247, 103, 175),rgb(140, 18, 228),rgb(245, 29, 245));
+-webkit-background-clip: text;
+color: transparent;
+font-family: 'Times New Roman', Times, serif;
+
+text-align: center;
+}
+/* .body{
+    background-color: rgba(11, 19, 244, 0.853);
+} */
+.para{
+    background-color: aliceblue;
+    color: black;
+    background: linear-gradient(to left,rgb(120, 239, 243),rgb(234, 234, 247),rgb(118, 218, 243),rgb(120,239,243),rgb(234,234,247));
+}
+.myimage{
+    height: 250px;
+    width:300px;
+    background: url("../../assets/images/easybook.jpg");
+}
+.myimage:hover,.myimage1:hover,.myimage2:hover,.myimage3:hover,.text:hover{
+-ms-transform: scale(0.8);
+-webkit-transform: scale(0.8);
+transform: scale(0.8);
+}
+p.easy{
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    font-size: xx-large;
+}
+.myimage1{
+    height:180px;
+    width:280px;
+    background: url("../../assets/images/personalize.jpg") 
+}
+.container{
+    display: flex;
+    gap:30px;
+    border-radius: 10%;
+}
+.myimage2{
+    height:165px;
+    width:280px;
+    background: url("../../assets/images/dream.jpg")
+}
+.myimage3{
+    height:190px;
+    width:260px;
+    background: url("../../assets/images/ui.jpg")
+}

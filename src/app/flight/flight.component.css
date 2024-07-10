@@ -1,0 +1,19 @@
+.background {
+    background-image: url("C:/FinalProject/Project/src/assets/images/airline2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slide-in-left{
+    animation: slide-in-left 1s forwards;
+}
+@keyframes slide-in-left{
+from {
+    transform: translateX(100%);
+    opacity: 0;
+}
+to{
+    transform: translateX(0);
+    opacity: 1;
+}
+}

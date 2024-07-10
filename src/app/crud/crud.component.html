@@ -1,0 +1,52 @@
+
+<body>
+<div class="container-fluid">
+    <div class="row mt-5">
+    <div class="image"></div>
+        
+<table  class="table table-hover table-light table-bordered slide-in-right mt-5 ">
+                
+    <thead class="bg-info">
+        <th> Booking ID </th>
+        <th> Flight Number </th>
+        <th> Flight Name </th>
+        <th> Source </th>
+        <th> Destination </th>
+        <th> Travel Date </th>
+        <th> Booking Date </th>
+        <th> Departure Time </th>
+        <th> Type of Seat </th>
+        <th> Cost </th>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <!-- <th> Mobile Number </th> -->
+        <th> Action </th>
+    </thead>
+    
+    <tbody >
+       
+    <tr *ngFor="let booking of data ; let i=index" >
+            <td> {{booking.bid}} </td>
+            <td> {{booking.flightno}} </td>
+            <td> {{booking.flightname}} </td>
+            <td> {{booking.source}} </td>
+            <td> {{booking.destination}} </td>
+            <td> {{booking.tdate}} </td>
+            <td> {{booking.bdate}} </td>
+            <td> {{booking.time}} </td>
+            <td> {{booking.type}} </td> 
+            <td> {{booking.cost}}</td>
+            <td> {{booking.fname}}</td>
+            <td> {{booking.lname}}</td>
+            <td> {{booking.age}}</td>
+            <td> {{booking.gender}}</td>
+            <!-- <td> {{booking.mobileNumber}}</td> -->
+            <button class="delete" (click)="deletebooking(i,booking)" >Cancel </button>
+        </tr> 
+    </tbody>
+</table> 
+    </div>
+</div>
+</body>
